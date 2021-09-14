@@ -16,6 +16,8 @@ This is for Week 3 of the BDU NFT Course.
 
 * Streamerd - Give us some art components we can use
 
+* violeta - research generative music NFT's
+
 ## How to collaborate
 
 Tell us your github id in the discord, or make pull requests. Add your work in your own folder please. 
