@@ -18,6 +18,8 @@ This is for Week 3 of the BDU NFT Course.
 
 * violeta - research generative music NFT's
 
+* MS - look into AI generative art
+
 ## How to collaborate
 
 Tell us your github id in the discord, or make pull requests. Add your work in your own folder please. 
