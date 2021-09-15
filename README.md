@@ -2,8 +2,6 @@
 BDU Generative Art Collaboration
 This is for Week 3 of the BDU NFT Course.
 
-Collaborating Folder: https://drive.google.com/drive/u/0/folders/1oH579VB0AQ5omF8-xYTeGbimGR23-qVp
-
 # Results You can expect
 ![](images/dev-f-punks.png)
 ![](images/dev-m-punks.png)
@@ -133,6 +131,23 @@ The result
 ![](images/piskelapp-result-second-layer.png)
 
 Now you probably have two things: the Art Engine ready to use and your layers. Time to try!
+
+## LAST STEP: Collaborating Folder
+
+There is a public folder where you can:
+
+- Get some "skeleton" to use in your creations (Base folder)
+- Save your layers so that they will be considered for the collection (Ready Creations folder). Consider give name to your layers that represents your original inspiration :)
+
+Collaborating Folder: https://drive.google.com/drive/u/0/folders/1oH579VB0AQ5omF8-xYTeGbimGR23-qVp
+
+#### Base folder
+
+![](images/base-folder.png)
+
+#### Ready Creations folder
+
+![](images/ready-creations-folder.png)
 
 ## Tutorials
 Here is a list of useful Tutorials. List Generative Art Tutorials
