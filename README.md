@@ -6,29 +6,14 @@ This is for Week 3 of the BDU NFT Course.
 ![](images/dev-f-punks.png)
 ![](images/dev-m-punks.png)
 
-## Tasks
+# What is a way to see this challenge?
+You can consider that this challenge has two parts:
+- Layers vision (Images)
+- Developer vision (Art Engine)
 
-* Antoine - Research Generative art projects to see how they did it
-
-* Kedar - Execute Generative art program with different images
-
-* Alex - Try your images in the generative art program
-
-* navlar - get Hard Drive to make us some base images
-
-* Everyone - Try tutorials and report back
-
-* Streamerd - Give us some art components we can use
-
-* violeta - research generative music NFT's
-
-* MS - look into AI generative art
-
-## How to collaborate
-
-Tell us your github id in the discord, or make pull requests. Add your work in your own folder please. 
-
+So you can start with any of them: Art Engine or Images.
 <br>
+![](images/mindset.png)
 
 # Steps to run 
 
