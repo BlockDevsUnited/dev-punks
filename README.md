@@ -104,6 +104,10 @@ Click on Export button
 
 ![](images/piskelapp-download-first-layer.png)
 
+The result
+
+![](images/piskelapp-result-first-layer.png)
+
 ##### Create your second layer
 
 Skin Layer
@@ -121,6 +125,10 @@ By clicking on Create a layer
 ![](images/piskelapp-deleting-first-layer.png)
 
 - Save your Skin Layer
+
+The result
+
+![](images/piskelapp-result-second-layer.png)
 
 Now you probably have two things: the Art Engine ready to use and your layers. Time to try!
 
