@@ -2,6 +2,10 @@
 BDU Generative Art Collaboration
 This is for Week 3 of the BDU NFT Course.
 
+# Results You can expect
+![](images/dev-f-punks.png)
+![](images/dev-m-punks.png)
+
 ## Tasks
 
 * Antoine - Research Generative art projects to see how they did it
