@@ -53,11 +53,76 @@ The `name` of each layer object represents the name of the folder (in `/layers/`
 
 Then optionally, update your `format` size, ie the outputted image size, and the `editionSize`, which is the amount of variation outputted.
 
+Make sure you have installed Canvas. You can install this node module by running the following command:
+
+```sh
+yarn add canvas@next
+```
+If for some reason the installation stays in a loop. Try stopping it and execute the command above again.
+
 When you are all ready, run the following command and your outputted art will be in the `build` directory:
 
 ```sh
 npm run build
 ```
+## Images
+
+In order to have your own generative arts you need to have some layers to use on your Art Engine.
+
+### How can I create some layers?
+
+You can use a free online editor and save your work locally by using: https://www.piskelapp.com/
+
+- Click on Create Sprite and start creating some layers
+
+So now you are able to start creating some layers. Right?
+
+#### Creating layers step by step
+
+If everything went well you will see PiskelApp ready to start creating:
+
+![](images/piskelapp-ready.png)
+
+In this case we are going to create two layers:
+- Head Layer
+- Skin Layer
+
+##### Create your first layer
+
+- Creating Head Layer
+
+![](images/piskelapp-first-layer.png)
+
+- Saving Head Layer
+
+Click on Export button
+
+![](images/piskelapp-export-first-layer.png)
+
+- Personalize the Scale -> 10x is something that works
+- Click on Download
+
+![](images/piskelapp-download-first-layer.png)
+
+##### Create your second layer
+
+Skin Layer
+
+By clicking on Create a layer
+
+![](images/piskelapp-create-layer-button.png)
+
+- Creating Skin Layer
+
+![](images/piskelapp-creating-second-layer.png)
+
+- Deleting Head Layer
+
+![](images/piskelapp-deleting-first-layer.png)
+
+- Save your Skin Layer
+
+Now you probably have two things: the Art Engine ready to use and your layers. Time to try!
 
 ## Tutorials
 Here is a list of useful Tutorials. List Generative Art Tutorials
