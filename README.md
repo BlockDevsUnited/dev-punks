@@ -1,4 +1,4 @@
-# BDU-Generative-Art
+# BDU-Generative-Art Tutorial
 BDU Generative Art Collaboration
 This is for Week 3 of the BDU NFT Course.
 
