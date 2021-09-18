@@ -6,9 +6,9 @@ This is for Week 3 of the BDU NFT Course.
 
 * Create Art Layers
 * Generate Metadata
-* Hardhat project - Smart Contrats & minting
-* Upload Images to Pinata
-* Upload Metadata to IPFS
+* Hardhat project - Smart Contrats
+* Write Minting Script and mint NFTs
+* Upload Metadata to IPFS and Images to Pinata
 
 # Results You can expect
 ![](images/dev-f-punks.png)
