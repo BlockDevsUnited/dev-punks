@@ -4,11 +4,14 @@ This is for Week 3 of the BDU NFT Course.
 
 # TODO
 
-* Create Art Layers
-* Generate Metadata
-* Hardhat project - Smart Contrats
-* Write Minting Script and mint NFTs
-* Upload Metadata to IPFS and Images to Pinata
+* Create Art Layers - alex, streamerd
+* Hardhat project - Smart Contrats - Kedar  (streamerd)
+* Write Minting Script and mint NFTs - Antoine 
+* Generate Metadata - Violeta (Kedar, alex, antoine streamerd, skiing888)
+* Upload Metadata to IPFS and Images to Pinata - steamerd (Kedar, Violeta, Alex, skiing888)
+* Deploy on Testnet - Kedar (antoine, Shu)
+* Deploy on Mainnet - Kedar (antoine, Shu)
+
 
 # Results You can expect
 ![](images/dev-f-punks.png)
