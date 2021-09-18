@@ -1,6 +1,14 @@
-# BDU-Generative-Art Tutorial
+# Devpunks
 BDU Generative Art Collaboration
 This is for Week 3 of the BDU NFT Course.
+
+# TODO
+
+* Finalize Art
+* Generate Metadata
+* Hardhat project - Smart Contrats & minting
+* Upload Images to Pinata
+* Upload Metadata to IPFS
 
 # Results You can expect
 ![](images/dev-f-punks.png)
