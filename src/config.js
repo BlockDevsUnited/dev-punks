@@ -2,14 +2,17 @@ const description =
   "This is the description of your NFT project, remember to replace this";
 const baseUri = "https://hashlips/nft";
 
-const layersOrder = [
-  { name: "Background" },
-  { name: "Eyeball" },
-  { name: "Eye color" },
-  { name: "Iris" },
-  { name: "Shine" },
-  { name: "Bottom lid" },
-  { name: "Top lid" },
+const layerConfigurations = [
+  {
+    growEditionSizeTo: 100,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Head" },
+      { name: "Skin" },
+      { name: "Facial" },
+      { name: "Hair" },
+    ],
+  },
 ];
 
 const format = {
@@ -22,16 +25,16 @@ const background = {
   brightness: "80%",
 };
 
+const rarityDelimiter = "#";
+
 const uniqueDnaTorrance = 10000;
 
-const editionSize = 10;
-
 module.exports = {
-  layersOrder,
   format,
-  editionSize,
   baseUri,
   description,
   background,
   uniqueDnaTorrance,
+  layerConfigurations,
+  rarityDelimiter,
 };

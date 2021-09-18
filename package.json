@@ -1,8 +1,19 @@
 {
-  "name": "nft_art_engine",
+  "name": "hashlips_art_engine",
   "version": "1.0.0",
   "description": "HashLips Art Engine is a tool used to create multiple different instances of artworks based on provided layers.",
   "main": "index.js",
+  "bin": "index.js",
+  "pkg": {
+    "assets": [
+      "layers/**/*"
+    ],
+    "scripts": [
+      "src/main.js",
+      "src/config.js"
+    ],
+    "outputPath": "dist"
+  },
   "scripts": {
     "build": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,6 +22,7 @@
   "license": "MIT",
   "dependencies": {
     "all": "^0.0.0",
-    "canvas": "^2.8.0"
+    "canvas": "^2.8.0",
+    "sha1": "^1.1.1"
   }
 }
