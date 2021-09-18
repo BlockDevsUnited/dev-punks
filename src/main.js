@@ -97,7 +97,7 @@ const addMetadata = (_dna, _edition) => {
   let dateTime = Date.now();
   let tempMetadata = {
     dna: sha1(_dna.join("")),
-    name: `#${_edition}`,
+    name: `dev-punks #${_edition}`,
     description: description,
     image: `${baseUri}/${_edition}.png`,
     edition: _edition,
