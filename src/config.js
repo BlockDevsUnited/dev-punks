@@ -8,6 +8,8 @@ const layerConfigurations = [
     layersOrder: [
       { name: "Background" },
       { name: "Head" },
+      { name: "HeadAndShoulders" },
+      { name: "HttpStatusCodes"},
       { name: "Skin" },
       { name: "Facial" },
       { name: "Hair" },
