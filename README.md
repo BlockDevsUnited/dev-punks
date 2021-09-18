@@ -4,7 +4,7 @@ This is for Week 3 of the BDU NFT Course.
 
 # TODO
 
-* Create Art
+* Create Art Layers
 * Generate Metadata
 * Hardhat project - Smart Contrats & minting
 * Upload Images to Pinata
