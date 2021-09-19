@@ -3,7 +3,7 @@
 //
 // When running the script with `npx hardhat run <script>` you'll find the Hardhat
 // Runtime Environment's members available in the global scope.
-const hre = require("hardhat");
+const {ethers} = require("hardhat");
 async function main() {
   // Hardhat always runs the compile task when running scripts with its command
   // line interface.
@@ -13,12 +13,12 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
-  const DevPunks = await hre.ethers.getContractFactory("DevPunks");
+  const DevPunks = await ethers.getContractFactory("DevPunks");
   const devpunks = await DevPunks.deploy();
   var i = 0;
   const address = ""; //paste the address here
   const cid = "QmYSdXXioG6afze1k6NJVaUENJUbqRTwECDJgu5SoTMgdr"; //new cid goes here.
-  await greeter.deployed();
+  await devpunks.deployed();
   console.log("deployed to:", "https://rinkeby.etherscan.io/address/"+devpunks.address);
   
   for (i = 1; i < 21; i++) {
