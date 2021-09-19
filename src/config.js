@@ -1,6 +1,6 @@
 const description =
-  "This is the description of your NFT project, remember to replace this";
-const baseUri = "https://hashlips/nft";
+  "A DEV-PUNKS project by BlockDevsUnited NFT-COURSE";
+const baseUri = "https://github.com/BlockDevsUnited/dev-punks/tree/main/build/images";
 
 const layerConfigurations = [
   {
