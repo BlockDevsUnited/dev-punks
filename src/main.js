@@ -5,6 +5,7 @@ const { createCanvas, loadImage } = require("canvas");
 const isLocal = typeof process.pkg === "undefined";
 const basePath = isLocal ? process.cwd() : path.dirname(process.execPath);
 const buildDir = `${basePath}/build`;
+const artDir = `${basePath}/art`;
 const layersDir = `${basePath}/layers`;
 const {
   format,
@@ -27,6 +28,11 @@ const buildSetup = () => {
     fs.rmdirSync(buildDir, { recursive: true });
   }
   fs.mkdirSync(buildDir);
+
+  if (fs.existsSync(artDir)) {
+    fs.rmdirSync(artDir, { recursive: true });
+  }
+  fs.mkdirSync(artDir);
 };
 
 const getRarityWeight = (_str) => {
@@ -77,7 +83,7 @@ const layersSetup = (layersOrder) => {
 
 const saveImage = (_editionCount) => {
   fs.writeFileSync(
-    `${buildDir}/${_editionCount}.png`,
+    `${artDir}/${_editionCount}.png`,
     canvas.toBuffer("image/png")
   );
 };
@@ -103,7 +109,6 @@ const addMetadata = (_dna, _edition) => {
     edition: _edition,
     date: dateTime,
     attributes: attributesList,
-    compiler: "HashLips Art Engine",
   };
   metadataList.push(tempMetadata);
   attributesList = [];
@@ -170,7 +175,7 @@ const createDna = (_layers) => {
 };
 
 const writeMetaData = (_data) => {
-  fs.writeFileSync(`${buildDir}/_metadata.json`, _data);
+  fs.writeFileSync(`${basePath}/metadata.json`, _data);
 };
 
 const saveMetaDataSingleFile = (_editionCount) => {
@@ -182,7 +187,7 @@ const saveMetaDataSingleFile = (_editionCount) => {
 
 const startCreating = async () => {
   let layerConfigIndex = 0;
-  let editionCount = 1;
+  let editionCount = 0;
   let failedCount = 0;
   while (layerConfigIndex < layerConfigurations.length) {
     const layers = layersSetup(

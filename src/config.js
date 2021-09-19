@@ -1,10 +1,10 @@
 const description =
   "A DEV-PUNKS project by BlockDevsUnited NFT-COURSE";
-const baseUri = "https://github.com/BlockDevsUnited/dev-punks/tree/main/build/images";
+const baseUri = "https://gateway.pinata.cloud/ipfs/";
 
 const layerConfigurations = [
   {
-    growEditionSizeTo: 100,
+    growEditionSizeTo: 500,
     layersOrder: [
       { name: "Background" },
       { name: "TshirtBackground" },
