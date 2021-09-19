@@ -7,6 +7,7 @@ const layerConfigurations = [
     growEditionSizeTo: 100,
     layersOrder: [
       { name: "Background" },
+      { name: "TshirtBackground" },
       { name: "Head" },
       { name: "HeadAndShoulders" },
       { name: "HttpStatusCodes"},
