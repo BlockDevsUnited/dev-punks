@@ -1,6 +1,6 @@
 const description =
   "A DEV-PUNKS project by BlockDevsUnited NFT-COURSE";
-const baseUri = "https://gateway.pinata.cloud/ipfs/";
+const baseUri = "ABCDEFG";
 
 const layerConfigurations = [
   {
