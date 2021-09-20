@@ -1,6 +1,7 @@
 # Devpunks
 BDU Generative Art Collaboration
 This is for Week 3 of the BDU NFT Course.
+Mainnet Contract: https://etherscan.io/address/0x430ba37b5c17df284559e653559bfad10e0d248f
 
 # TODO
 
@@ -162,10 +163,10 @@ Collaborating Folder: https://drive.google.com/drive/u/0/folders/1oH579VB0AQ5omF
 Here is a list of useful Tutorials. List Generative Art Tutorials
 
 ### Written Tutorials
-An introduction to Generative Art: what it is, and how you make it
+* An introduction to Generative Art: what it is, and how you make it: https://www.freecodecamp.org/news/an-introduction-to-generative-art-what-it-is-and-how-you-make-it-b0b363b50a70/
 * https://aiartists.org/generative-art-design - recommends an Edx course
-* Generative Art NFTs With Python and Solidity | by Parker Ferguson | Sep, 2021
-* Monster Guide to Creating Generative Art NFTs
+* Generative Art NFTs With Python and Solidity: https://betterprogramming.pub/creating-generative-art-nfts-with-python-solidity-a95eaeea515e
+* Monster Guide to Creating Generative Art NFTs: https://www.linkedin.com/pulse/monster-guide-creating-generative-art-nfts-jillian-hinds-williams
 * https://medium.com/web-design-web-developer-magazine/how-to-prepare-artwork-for-a-generative-nft-programmer-970adf59c042 (NiftyNinja)
 * https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwil_p_Wif_yAhUHmuAKHdrgA2wQFnoECBMQAQ&url=https%3A%2F%2Fwww.generativehut.com%2Ftutorials&usg=AOvVaw3P0_MscFj6uzWOcQ9t5222
 * https://blog.kreechures.com/generative-nfts/
@@ -174,23 +175,21 @@ An introduction to Generative Art: what it is, and how you make it
 
 ### Youtube Tutorials:
 
-* Code generative art for NFT in node.js part 1MS
-* How To Create An ENTIRE NFT Collection (10,000+) In Under 1 Hour Without Coding Knowledge
-* How To Create 10,000 Generative Art NFT Like Cryptopunks In 15 Mins with No Coding Experience
-* How to make a NFT Project like Crypto Punks or Bored Apes!
-* How to Set Up a Generative NFT Art Collection/Project
-* How to Create an NFT Collection (10,000+) No Coding Knowledge Needed
-* Code a 10000 NFT Minting Dapp part 1
-* The Defiant Guide to Art Blocks - Generative art - Good non-technical view of NFTs
-🌿 How to mint NFTs directly from the contract | Etherscan tutorial
-* Code generative art for NFT in node.js part 2
-Jan - Non fungible tokens, EIP 1559 
+* Code generative art for NFT in node.js part 1: https://www.youtube.com/watch?v=3c2EFpCr_vY
+* How To Create An ENTIRE NFT Collection (10,000+) In Under 1 Hour Without Coding Knowledge: https://www.youtube.com/watch?v=UCxA8sDltMY
+* How To Create 10,000 Generative Art NFT Like Cryptopunks In 15 Mins with No Coding Experience: https://www.youtube.com/watch?v=ThLoQTh0QUQ
+* How to make a NFT Project like Crypto Punks or Bored Apes!: https://www.youtube.com/watch?v=ThLoQTh0QUQ
+* How to Set Up a Generative NFT Art Collection/Project: https://www.youtube.com/watch?v=C5CLFpslCTw
+* How to Create an NFT Collection (10,000+) No Coding Knowledge Needed: https://www.youtube.com/watch?v=NIJI2_1anqA
+* Code a 10000 NFT Minting Dapp part 1: https://www.youtube.com/watch?v=SD1DTrlJeKM
+* The Defiant Guide to Art Blocks - Generative art - Good non-technical view of NFTs: https://www.youtube.com/watch?v=vsQQWjaqnBA
+* How to mint NFTs directly from the contract | Etherscan tutorial: https://www.youtube.com/watch?v=GZca6HOcPa0
+* Code generative art for NFT in node.js part 2: https://youtu.be/tfcqFm86KhE 
 
 
 ### Github Repositories:
-* Antoine - https://github.com/NotLuksus/nft-art-generator
-* Kedar-
-https://github.com/HashLips/hashlips_art_engine
+* https://github.com/NotLuksus/nft-art-generator
+* https://github.com/HashLips/hashlips_art_engine
 * https://github.com/HashLips/nft_collection_minter
 * https://github.com/HashLips/generative-art-node
 * https://github.com/terkelg/awesome-creative-coding
