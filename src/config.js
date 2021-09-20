@@ -1,15 +1,16 @@
 const description =
   "A DEV-PUNKS project by BlockDevsUnited NFT-COURSE";
+//const baseUri = "https://github.com/BlockDevsUnited/dev-punks/tree/main/build/images";
 const baseUri = "ABCDEFG";
 
 const layerConfigurations = [
   {
-    growEditionSizeTo: 500,
+    editionCountStart: 5,
+    growEditionSizeTo: 9,
     layersOrder: [
       { name: "Background" },
       { name: "TshirtBackground" },
       { name: "Head" },
-      { name: "HeadAndShoulders" },
       { name: "HttpStatusCodes"},
       { name: "Skin" },
       { name: "Facial" },

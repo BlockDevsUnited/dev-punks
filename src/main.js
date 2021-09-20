@@ -5,7 +5,6 @@ const { createCanvas, loadImage } = require("canvas");
 const isLocal = typeof process.pkg === "undefined";
 const basePath = isLocal ? process.cwd() : path.dirname(process.execPath);
 const buildDir = `${basePath}/build`;
-const artDir = `${basePath}/art`;
 const layersDir = `${basePath}/layers`;
 const {
   format,
@@ -28,11 +27,8 @@ const buildSetup = () => {
     fs.rmdirSync(buildDir, { recursive: true });
   }
   fs.mkdirSync(buildDir);
-
-  if (fs.existsSync(artDir)) {
-    fs.rmdirSync(artDir, { recursive: true });
-  }
-  fs.mkdirSync(artDir);
+  fs.mkdirSync(`${buildDir}/json`);
+  fs.mkdirSync(`${buildDir}/images`);
 };
 
 const getRarityWeight = (_str) => {
@@ -77,13 +73,16 @@ const layersSetup = (layersOrder) => {
     id: index,
     name: layerObj.name,
     elements: getElements(`${layersDir}/${layerObj.name}/`),
+    blendMode:
+      layerObj["blend"] != undefined ? layerObj["blend"] : "source-over",
+    opacity: layerObj["opacity"] != undefined ? layerObj["opacity"] : 1,
   }));
   return layers;
 };
 
 const saveImage = (_editionCount) => {
   fs.writeFileSync(
-    `${artDir}/${_editionCount}.png`,
+    `${buildDir}/images/${_editionCount}.png`,
     canvas.toBuffer("image/png")
   );
 };
@@ -103,12 +102,13 @@ const addMetadata = (_dna, _edition) => {
   let dateTime = Date.now();
   let tempMetadata = {
     dna: sha1(_dna.join("")),
-    name: `dev-punks #${_edition}`,
+    name: `dev punk #${_edition}`,
     description: description,
     image: `${baseUri}/${_edition}.png`,
     edition: _edition,
     date: dateTime,
     attributes: attributesList,
+    compiler: "HashLips Art Engine",
   };
   metadataList.push(tempMetadata);
   attributesList = [];
@@ -129,9 +129,11 @@ const loadLayerImg = async (_layer) => {
   });
 };
 
-const drawElement = (_element) => {
-  ctx.drawImage(_element.loadedImage, 0, 0, format.width, format.height);
-  addAttributes(_element);
+const drawElement = (_renderObject) => {
+  ctx.globalAlpha = _renderObject.layer.opacity;
+  ctx.globalCompositeOperation = _renderObject.layer.blendMode;
+  ctx.drawImage(_renderObject.loadedImage, 0, 0, format.width, format.height);
+  addAttributes(_renderObject);
 };
 
 const constructLayerToDna = (_dna = [], _layers = []) => {
@@ -141,6 +143,8 @@ const constructLayerToDna = (_dna = [], _layers = []) => {
     );
     return {
       name: layer.name,
+      blendMode: layer.blendMode,
+      opacity: layer.opacity,
       selectedElement: selectedElement,
     };
   });
@@ -175,19 +179,24 @@ const createDna = (_layers) => {
 };
 
 const writeMetaData = (_data) => {
-  fs.writeFileSync(`${basePath}/metadata.json`, _data);
+  fs.writeFileSync(`${buildDir}/json/_metadata.json`, _data);
 };
 
 const saveMetaDataSingleFile = (_editionCount) => {
   fs.writeFileSync(
-    `${buildDir}/${_editionCount}.json`,
-    JSON.stringify(metadataList.find((meta) => meta.edition == _editionCount))
+    `${buildDir}/json/${_editionCount}.json`,
+    JSON.stringify(
+      metadataList.find((meta) => meta.edition == _editionCount),
+      null,
+      2
+    )
   );
 };
 
 const startCreating = async () => {
   let layerConfigIndex = 0;
-  let editionCount = 0;
+  //let editionCount = 1;
+  editionCount = layerConfigurations[layerConfigIndex].editionCountStart;
   let failedCount = 0;
   while (layerConfigIndex < layerConfigurations.length) {
     const layers = layersSetup(
@@ -205,13 +214,13 @@ const startCreating = async () => {
           loadedElements.push(loadLayerImg(layer));
         });
 
-        await Promise.all(loadedElements).then((elementArray) => {
+        await Promise.all(loadedElements).then((renderObjectArray) => {
           ctx.clearRect(0, 0, format.width, format.height);
           if (background.generate) {
             drawBackground();
           }
-          elementArray.forEach((element) => {
-            drawElement(element);
+          renderObjectArray.forEach((renderObject) => {
+            drawElement(renderObject);
           });
           saveImage(editionCount);
           addMetadata(newDna, editionCount);
@@ -237,7 +246,7 @@ const startCreating = async () => {
     }
     layerConfigIndex++;
   }
-  writeMetaData(JSON.stringify(metadataList));
+  writeMetaData(JSON.stringify(metadataList, null, 2));
 };
 
-module.exports = { startCreating, buildSetup };
+module.exports = { startCreating, buildSetup, getElements };
