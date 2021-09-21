@@ -13,7 +13,7 @@ abstract contract ERC20 {
 contract DevPunks is ERC721, Ownable {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
-    uint public maxSupply = 1337;
+    bool public mintingLocked;
     uint public totalSupply;
     address constant public devcashAddress = 0x0fca8Fdb0FB115A33BAadEc6e7A141FFC1bC7d5a;
     constructor() ERC721("DevPunks", "DP") {}
@@ -25,7 +25,7 @@ contract DevPunks is ERC721, Ownable {
     }
 
     function mint(address player, string memory mytokenURI) public onlyOwner returns (uint256) {
-        require(_tokenIds.current() < maxSupply,"Max Supply Reached");
+        require(mintingLocked=false,"Minting Locked Forever");
         uint256 newItemId = _tokenIds.current();
         _mint(player, newItemId);
         tokenURIs[newItemId] = mytokenURI;
@@ -44,5 +44,10 @@ contract DevPunks is ERC721, Ownable {
     
     function checkBalance() public view returns(uint) {
         return ERC20(devcashAddress).balanceOf(address(this));
+    }
+    
+    function lockMinting() public {
+        require(msg.sender==owner(),"You are not owner of the contract");
+        mintingLocked=true;
     }
 }
