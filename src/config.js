@@ -3,10 +3,11 @@ const description =
 //const baseUri = "https://github.com/BlockDevsUnited/dev-punks/tree/main/build/images";
 const baseUri = "ABCDEFG";
 
+
 const layerConfigurations = [
   {
-    editionCountStart: 5,
-    growEditionSizeTo: 9,
+    editionCountStart: 0,
+    growEditionSizeTo: 100,
     layersOrder: [
       { name: "Background" },
       { name: "TshirtBackground" },
@@ -15,6 +16,7 @@ const layerConfigurations = [
       { name: "Skin" },
       { name: "Facial" },
       { name: "Hair" },
+      { name: "Accessory"},
     ],
   },
 ];
