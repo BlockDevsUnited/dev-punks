@@ -38,6 +38,7 @@ Create generative art by using the canvas api and node js. Before you use the ge
 ```sh
 git clone 
 
+npm install --global yarn
 yarn add all
 ```
 
