@@ -1,22 +1,61 @@
-# Devpunks
+# devPunks
 BDU Generative Art Collaboration
 This is for Week 3 of the BDU NFT Course.
 Mainnet Contract: https://etherscan.io/address/0x430ba37b5c17df284559e653559bfad10e0d248f
 
-# TODO
 
-1. Create Art Layers - alex, streamerd
-2. Hardhat project - Smart Contrats - Kedar  (streamerd) ✅
-3. Write Minting Script and mint NFTs - Antoine 
-4. Generate Metadata - Violeta (Kedar, alex, antoine streamerd, skiing888)
-5. Upload Metadata to IPFS and Images to Pinata - steamerd (Kedar, Violeta, Alex, skiing888)
+![](images/devpunks_121221/devpunks_at_opensea.png)
+
+first 12 of devPunks, randomly generated and minted to succeeding course participants.
+https://opensea.io/collection/devpunks-v2
+
+# concept
+
+devPunks; an outcome of a month long collaboration. 
+
+partially matching devPunks' facial expressions and textual interpretations of HTTP response status codes: 
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+ HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:
+
+    Informational responses (100–199)
+    Successful responses (200–299)
+    Redirection messages (300–399)
+    Client error responses (400–499)
+    Server error responses (500–599)
+
+these numbers, appearing on a developer on a daily basis, are used as a common understanding of  system-level communication and basing a documented concensus on client-server setting of systems.
+
+in general, devs incorporate those response/return codes; for systems as they make sense for those particular scenarios.
+
+there's also this one. some codes are well known, some are not. so here, it's more like that error code, for a techie or non-techie will create bias for purchase/ it'll be self-exploratory.
+ 
+hence, project is opening this to public discussion, and invite all to evolve and grow with more developers, designers, pschologists. 
+
+people of tecnical and non-technical literature knowledge and anyone that want to contribute, in their ways.
+
+
+
+# story, as-is and future of collabs
+
+
+#  collaboration, was in action
+
+as part of the NFT programming course, we have distributed our attention and motivation for learning, in multiple tasks, from contemplation, design, development and more.
+
+concept development, writing smart contracts, working with metadata and deploying on testnets/mainnet, all organised on BlockchainDevsUnited's discord server.
+
+as is, responseCodes and facialExpressions are not tried to be matched, since it is not like that our experiences can be always mapped to our reactions, deterministicly and assumptiously.
+
+
+1. Create Art Layers - alex, streamerd ✅
+2. Hardhat project - Smart Contrats - Kedar, streamerd ✅
+3. Write Minting Script and mint NFTs - Antoine ✅
+4. Generate Metadata - Violeta (Kedar, alex, antoine streamerd, skiing888)✅
+5. Upload Metadata to IPFS and Images to Pinata Violeta (Kedar,  Alex, skiing888)✅
 6. Deploy on Testnet - Kedar (antoine, Shu) ✅
 7. Deploy on Mainnet - Kedar (antoine, Shu) ✅
 
-
-# Results You can expect
-![](images/dev-f-punks.png)
-![](images/dev-m-punks.png)
 
 # What is a way to see this challenge?
 You can consider that this challenge has two parts:
