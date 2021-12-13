@@ -1,19 +1,32 @@
 # devPunks
 BDU Generative Art Collaboration
-This is for Week 3 of the BDU NFT Course.
-Mainnet Contract: https://etherscan.io/address/0x430ba37b5c17df284559e653559bfad10e0d248f
-
+----
 
 ![](images/devpunks_121221/devpunks_at_opensea.png)
 
-first 12 of devPunks, randomly generated and minted to succeeding course participants.
+Mainnet Contract 
+---
+https://etherscan.io/address/0x430ba37b5c17df284559e653559bfad10e0d248f 
+---
+(collectively deployed at 3rd week of the BDU NFT Course)
+
+first 12 of devPunks, randomly generated and minted to succeeding course participants. 
+
 https://opensea.io/collection/devpunks-v2
+
+good thing is, you can purchase those punks as their imperfectionist, genesis series. 
+
+or better or build yourself new generations with this tool, all this jazz is for that actually ;) 
+
+don't forget to add your flavour in it and let us know if it was fun to experience it. 
+
+and if you want to join to next course, join our discord and have your place for learning contract development and use of tools for Decentralised Autonomous Organisations,  Decentralised Exchanges following Non-fungible Tokens.
 
 # concept
 
 devPunks; an outcome of a month long collaboration. 
 
-partially matching devPunks' facial expressions and textual interpretations of HTTP response status codes: 
+relating devPunks' facial expressions with textual interpretations of HTTP response status codes and how they'd feel in variety of scenarios: 
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 
  HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:
@@ -24,28 +37,28 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
     Client error responses (400–499)
     Server error responses (500–599)
 
-these numbers, appearing on a developer on a daily basis, are used as a common understanding of  system-level communication and basing a documented concensus on client-server setting of systems.
+these numbers, appearing to a developer on a daily basis, are used as a common understanding of  system-level communication and basing a documented concensus on client-server setting of systems.
 
 in general, devs incorporate those response/return codes; for systems as they make sense for those particular scenarios.
 
-there's also this one. some codes are well known, some are not. so here, it's more like that error code, for a techie or non-techie will create bias for purchase/ it'll be self-exploratory.
+as is, responseCodes and facialExpressions are not tried to be matched, since  our experiences are not always matching with our reaction. 
+
+random generation in this case, inherently solving that without going deterministic and assumptious at all. 
  
 hence, project is opening this to public discussion, and invite all to evolve and grow with more developers, designers, pschologists. 
 
-people of tecnical and non-technical literature knowledge and anyone that want to contribute, in their ways.
+ome codes are well known, some are not. so here, it's more like that error code, for a techie or non-techie will create bias for purchase/ it'll be self-exploratory.
 
+-----
+# story of the collaboration
 
+as part of the NFT programming course, we have distributed and focused our motivation for learning in multiple tasks; from contemplation, design, development and more.
 
-# story, as-is and future of collabs
+concept development, writing smart contracts, working with metadata and deploying on testnets/mainnet, 
 
+all organised on BlockchainDevsUnited's discord server:
+https://discord.gg/gkX2B2MY
 
-#  collaboration, was in action
-
-as part of the NFT programming course, we have distributed our attention and motivation for learning, in multiple tasks, from contemplation, design, development and more.
-
-concept development, writing smart contracts, working with metadata and deploying on testnets/mainnet, all organised on BlockchainDevsUnited's discord server.
-
-as is, responseCodes and facialExpressions are not tried to be matched, since it is not like that our experiences can be always mapped to our reactions, deterministicly and assumptiously.
 
 
 1. Create Art Layers - alex, streamerd ✅
