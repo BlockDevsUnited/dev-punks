@@ -7,7 +7,7 @@ const baseUri = "ABCDEFG";
 const layerConfigurations = [
   {
     editionCountStart: 0,
-    growEditionSizeTo: 100,
+    growEditionSizeTo: 10,
     layersOrder: [
       { name: "Background" },
       { name: "TshirtBackground" },
@@ -16,7 +16,6 @@ const layerConfigurations = [
       { name: "Skin" },
       { name: "Facial" },
       { name: "Hair" },
-      { name: "Accessory"},
     ],
   },
 ];
